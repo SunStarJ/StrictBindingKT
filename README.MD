@@ -42,8 +42,8 @@ android {
 
 ```
 
-### 开始撸码
-#### 绑定工具介绍
+## 开始撸码
+### 绑定工具介绍
 
 仅仅展示数据构造，使用时按照格式传入即可
 
@@ -59,7 +59,7 @@ data class XMLBindingData(val id: Int, val value: Any)
 
 ```
 
-#### Activity使用
+### Activity使用
 仅展示核心代码，代码细节可以直接查看原始[MainActivity](/app/src/main/java/com/SunStarJ/testbinding/MainActivity.kt)
 
 ``` kotlin
@@ -100,7 +100,7 @@ class MainActivity : SBindActivity() {
 }
 
 ```
-#### Adapter 实现
+### Adapter 实现
 ```xml
 <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rc_view"
@@ -147,7 +147,7 @@ fun initRecycleViewAdapter(recyclerView: RecyclerView, adapter: SBindAdapter<*>)
 ```
 
 
-#### Fragment 核心代码
+### Fragment 核心代码
 
 ```kotlin
 
@@ -171,7 +171,7 @@ class UserFragment private constructor() : SBindFragment() {
 
 ```
 
-### 写在最后
+## 写在最后
 再次感谢[KunMinX](https://github.com/KunMinX)大佬开源出来的实现思路
 
 也不知道会不会有人用，如果有人用的话能不能给个start。一个不入流小Android，期待您的批评和指正，谢谢，完结撒花
