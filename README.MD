@@ -9,8 +9,7 @@
 
 请在使用模块build.gradle中开启 databinding 支持以及 kapt 依赖！！
 
-··· 
-
+````groovy
 plugins {
 
     id 'com.android.application'
@@ -20,5 +19,16 @@ plugins {
     id 'kotlin-kapt'  //这里
 
 } 
+````
+```groovy
+android {
+    // ...省略N多代码
+    dataBinding {
+        enabled = true
+    }
+}
 
-···
+```
+
+
+
