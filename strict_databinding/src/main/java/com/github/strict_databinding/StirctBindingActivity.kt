@@ -17,6 +17,7 @@ abstract class StirctBindingActivity : FragmentActivity() {
         config.xmlBindingDataArray.forEach {
             db.setVariable(it.id, it.value)
         }
+
     }
 
 

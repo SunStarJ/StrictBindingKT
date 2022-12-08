@@ -30,4 +30,5 @@ abstract class StrictBindingFragment:Fragment() {
 
     abstract fun initDataBindingConfig():DataBindingConfig
 
+
 }

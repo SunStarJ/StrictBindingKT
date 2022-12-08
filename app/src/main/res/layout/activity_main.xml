@@ -4,40 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="mainVm"
             type="com.github.testbinding.MainTestViewModel" />
+
         <variable
             name="changeTextClick"
             type="android.view.View.OnClickListener" />
+
+        <variable
+            name="fabClick"
+            type="android.view.View.OnClickListener" />
+
         <variable
             name="adapter"
             type="com.github.testbinding.TestAdapter" />
+
+        <variable
+            name="navigationChange"
+            type="com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener" />
     </data>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:paddingVertical="15dp"
-            android:gravity="center"
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_add"
             android:layout_height="wrap_content"
-            android:text="@{mainVm.testText}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             android:onClick="@{changeTextClick}"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:text="click me add data to list by mainVm"/>
         <androidx.recyclerview.widget.RecyclerView
-            recycleViewList="@{mainVm.dataList}"
+            android:id="@+id/rc_view"
             recycleViewAdapter="@{adapter}"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            recycleViewList="@{mainVm.dataList}"
             android:layout_width="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add"
             android:layout_height="wrap_content"/>
-    </LinearLayout>
+        <FrameLayout
+            app:layout_constraintTop_toBottomOf="@+id/rc_view"
+            android:id="@+id/fcv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_view"
+            android:layout_height="0dp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_view"
+            bottomNavigationChange="@{navigationChange}"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation_menu" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{fabClick}"
+            android:src="@mipmap/person"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_view"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:contentDescription="测试" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
