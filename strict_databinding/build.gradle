@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.github.strict_databinding'
+    namespace 'com.SunStarJ.strict_databinding'
     compileSdk 33
 
     defaultConfig {

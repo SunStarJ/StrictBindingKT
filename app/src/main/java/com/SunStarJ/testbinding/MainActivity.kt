@@ -1,18 +1,17 @@
-package com.github.testbinding
+package com.SunStarJ.testbinding
 
 
-import android.os.Bundle
-import android.view.MenuItem
 import android.view.View.OnClickListener
 import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import com.github.strict_databinding.DataBindingConfig
-import com.github.strict_databinding.StirctBindingActivity
-import com.github.strict_databinding.XMLBindingData
+import com.SunStarJ.strict_databinding.DataBindingConfig
+import com.SunStarJ.strict_databinding.SBindActivity
+import com.SunStarJ.strict_databinding.XMLBindingData
+import com.github.testbinding.R
 import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
 
-class MainActivity : StirctBindingActivity() {
+class MainActivity : SBindActivity() {
 
     private val mainVM by viewModels<MainTestViewModel>()
 
@@ -31,7 +30,8 @@ class MainActivity : StirctBindingActivity() {
             XMLBindingData(BR.changeTextClick, OnClickListener { mainVM.addListData() }),
             XMLBindingData(BR.mainVm, mainVM),
             XMLBindingData(BR.adapter, TestAdapter(this)),
-            XMLBindingData(BR.navigationChange,
+            XMLBindingData(
+                BR.navigationChange,
                 OnItemSelectedListener {
                     val index = when (it.itemId) {
                         R.id.main_home -> 0
@@ -41,7 +41,8 @@ class MainActivity : StirctBindingActivity() {
                     changeFragment(index)
                     index != -1
                 }),
-            XMLBindingData(BR.fabClick,
+            XMLBindingData(
+                BR.fabClick,
                 OnClickListener { userVM.setNewUserName() })
         )
     }

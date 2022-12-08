@@ -1,4 +1,4 @@
-package com.github.strict_databinding
+package com.SunStarJ.strict_databinding
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 
-abstract class StrictBindingFragment:Fragment() {
-    private lateinit var config:DataBindingConfig
+abstract class SBindFragment:Fragment() {
+    private lateinit var config: DataBindingConfig
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         config = initDataBindingConfig()
@@ -28,7 +28,7 @@ abstract class StrictBindingFragment:Fragment() {
         return viewDataBinding.root
     }
 
-    abstract fun initDataBindingConfig():DataBindingConfig
+    abstract fun initDataBindingConfig(): DataBindingConfig
 
 
 }

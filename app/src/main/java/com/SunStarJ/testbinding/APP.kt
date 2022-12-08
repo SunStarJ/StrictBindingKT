@@ -1,4 +1,4 @@
-package com.github.testbinding
+package com.SunStarJ.testbinding
 
 import android.app.Application
 import androidx.fragment.app.Fragment

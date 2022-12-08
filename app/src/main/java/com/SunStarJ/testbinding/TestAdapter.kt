@@ -1,12 +1,13 @@
-package com.github.testbinding
+package com.SunStarJ.testbinding
 
 import android.content.Context
 import android.util.Log
 import android.view.View
-import com.github.strict_databinding.StrictBindingAdapter
-import com.github.strict_databinding.XMLBindingData
+import com.SunStarJ.strict_databinding.SBindAdapter
+import com.SunStarJ.strict_databinding.XMLBindingData
+import com.github.testbinding.R
 
-class TestAdapter(context: Context) : StrictBindingAdapter<TestData>(context) {
+class TestAdapter(context: Context) : SBindAdapter<TestData>(context) {
     override fun setItemConfig(positionData: TestData): List<XMLBindingData> = mutableListOf(
         XMLBindingData(BR.testData,positionData),
         XMLBindingData(BR.genderClick,View.OnClickListener {

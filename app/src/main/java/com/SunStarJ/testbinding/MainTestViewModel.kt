@@ -1,4 +1,4 @@
-package com.github.testbinding
+package com.SunStarJ.testbinding
 
 import android.util.Log
 import androidx.databinding.ObservableArrayList

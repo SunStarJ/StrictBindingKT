@@ -1,4 +1,4 @@
-package com.github.strict_databinding
+package com.SunStarJ.strict_databinding
 
 import androidx.databinding.BindingAdapter
 import androidx.databinding.ObservableArrayList
@@ -9,12 +9,12 @@ import com.google.android.material.navigation.NavigationBarView
 @BindingAdapter("recycleViewList")
 fun initRecycleViewList(recyclerView: RecyclerView, dataList: ObservableArrayList<*>) {
     recyclerView.adapter?.let {
-        (it as StrictBindingAdapter<*>).initDataList(dataList)
+        (it as SBindAdapter<*>).initDataList(dataList)
     }
 }
 
 @BindingAdapter("recycleViewAdapter")
-fun initRecycleViewAdapter(recyclerView: RecyclerView, adapter: StrictBindingAdapter<*>) {
+fun initRecycleViewAdapter(recyclerView: RecyclerView, adapter: SBindAdapter<*>) {
     recyclerView.adapter = adapter
 }
 

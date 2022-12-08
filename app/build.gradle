@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.github.testbinding'
+    namespace 'com.SunStarJ.testbinding'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.github.testbinding"
+        applicationId "com.SunStarJ.testbinding"
         minSdk 24
         targetSdk 33
         versionCode 1

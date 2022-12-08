@@ -4,7 +4,7 @@
     <data>
         <variable
             name="testData"
-            type="com.github.testbinding.TestData" />
+            type="com.SunStarJ.testbinding.TestData" />
         <variable
             name="genderClick"
             type="android.view.View.OnClickListener" />

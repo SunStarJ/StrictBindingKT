@@ -1,14 +1,11 @@
-package com.github.strict_databinding
+package com.SunStarJ.strict_databinding
 
-import android.content.Context
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.FragmentActivity
 
-abstract class StirctBindingActivity : FragmentActivity() {
+abstract class SBindActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val config = initBindingConfig()

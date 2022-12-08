@@ -7,7 +7,7 @@
 
         <variable
             name="mainVm"
-            type="com.github.testbinding.MainTestViewModel" />
+            type="com.SunStarJ.testbinding.MainTestViewModel" />
 
         <variable
             name="changeTextClick"
@@ -19,7 +19,7 @@
 
         <variable
             name="adapter"
-            type="com.github.testbinding.TestAdapter" />
+            type="com.SunStarJ.testbinding.TestAdapter" />
 
         <variable
             name="navigationChange"

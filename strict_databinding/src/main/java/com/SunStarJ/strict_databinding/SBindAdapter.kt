@@ -1,4 +1,4 @@
-package com.github.strict_databinding
+package com.SunStarJ.strict_databinding
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -12,8 +12,8 @@ import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
-abstract class StrictBindingAdapter<T>(private val context: Context) :
-    Adapter<StrictBindingAdapter<T>.MYViewHolder>() {
+abstract class SBindAdapter<T>(private val context: Context) :
+    Adapter<SBindAdapter<T>.MYViewHolder>() {
 
     var dataList: ObservableArrayList<T>? = null
         private set

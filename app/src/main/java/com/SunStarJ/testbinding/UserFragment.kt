@@ -1,10 +1,11 @@
-package com.github.testbinding
+package com.SunStarJ.testbinding
 
-import com.github.strict_databinding.DataBindingConfig
-import com.github.strict_databinding.StrictBindingFragment
-import com.github.strict_databinding.XMLBindingData
+import com.SunStarJ.strict_databinding.DataBindingConfig
+import com.SunStarJ.strict_databinding.SBindFragment
+import com.SunStarJ.strict_databinding.XMLBindingData
+import com.github.testbinding.R
 
-class UserFragment private constructor() : StrictBindingFragment() {
+class UserFragment private constructor() : SBindFragment() {
     private val userViewModel by lazy {
         applicationVM<UserViewModel>()
     }
@@ -16,7 +17,7 @@ class UserFragment private constructor() : StrictBindingFragment() {
     override fun initDataBindingConfig(): DataBindingConfig = config
 
     companion object{
-        fun newInstance():UserFragment{
+        fun newInstance(): UserFragment {
             return UserFragment()
         }
     }

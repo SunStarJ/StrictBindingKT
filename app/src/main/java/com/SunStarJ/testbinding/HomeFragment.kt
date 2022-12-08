@@ -1,9 +1,10 @@
-package com.github.testbinding
+package com.SunStarJ.testbinding
 
-import com.github.strict_databinding.DataBindingConfig
-import com.github.strict_databinding.StrictBindingFragment
+import com.SunStarJ.strict_databinding.DataBindingConfig
+import com.SunStarJ.strict_databinding.SBindFragment
+import com.github.testbinding.R
 
-class HomeFragment private constructor() : StrictBindingFragment() {
+class HomeFragment private constructor() : SBindFragment() {
     override fun initDataBindingConfig(): DataBindingConfig =
         DataBindingConfig(R.layout.home_fragment)
 

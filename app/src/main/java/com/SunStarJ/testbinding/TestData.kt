@@ -1,4 +1,4 @@
-package com.github.testbinding
+package com.SunStarJ.testbinding
 
 data class TestData(var name: String, var age: Int, var gander: String){
     override fun toString(): String {
