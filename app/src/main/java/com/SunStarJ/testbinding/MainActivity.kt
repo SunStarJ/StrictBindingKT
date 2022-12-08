@@ -8,7 +8,6 @@ import androidx.fragment.app.commit
 import com.SunStarJ.strict_databinding.DataBindingConfig
 import com.SunStarJ.strict_databinding.SBindActivity
 import com.SunStarJ.strict_databinding.XMLBindingData
-import com.github.testbinding.R
 import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
 
 class MainActivity : SBindActivity() {
@@ -66,7 +65,7 @@ class MainActivity : SBindActivity() {
             }
             show(showFragment)
         }
-        lastIndex = index;
+        lastIndex = index
     }
 
 }

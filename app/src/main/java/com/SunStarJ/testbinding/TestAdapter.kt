@@ -5,7 +5,6 @@ import android.util.Log
 import android.view.View
 import com.SunStarJ.strict_databinding.SBindAdapter
 import com.SunStarJ.strict_databinding.XMLBindingData
-import com.github.testbinding.R
 
 class TestAdapter(context: Context) : SBindAdapter<TestData>(context) {
     override fun setItemConfig(positionData: TestData): List<XMLBindingData> = mutableListOf(
