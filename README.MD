@@ -42,6 +42,27 @@ android {
 
 ```
 
+### 添加代码依赖
+```groovy
+
+allprojects {
+		repositories {
+			// ...
+			maven { url 'https://jitpack.io' }
+		}
+}
+
+
+```
+
+```groovy
+
+dependencies {
+    implementation 'com.github.SunStarJ:StrictBindingKT:v0.0.6'
+}
+
+```
+
 ## 开始撸码
 ### 绑定工具介绍
 
