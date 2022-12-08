@@ -4,6 +4,20 @@ plugins {
     id 'kotlin-kapt'
 }
 
+publishing {
+    publications {
+        // 这个mavenJava可以随便填，只是一个任务名字而已
+        // MavenPublication必须有，这个是调用的任务类
+        mavenJava(MavenPublication) {
+            // 这里头是artifacts的配置信息，不填会采用默认的
+            groupId = 'org.gradle.sample'
+            artifactId = 'library'
+            version = '0.0.1'
+            from components.java
+        }
+    }
+}
+
 android {
     namespace 'com.SunStarJ.strict_databinding'
     compileSdk 33
