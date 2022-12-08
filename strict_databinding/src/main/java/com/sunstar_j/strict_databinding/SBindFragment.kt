@@ -1,4 +1,4 @@
-package com.SunStarJ.strict_databinding
+package com.sunstar_j.strict_databinding
 
 import android.os.Bundle
 import android.view.LayoutInflater

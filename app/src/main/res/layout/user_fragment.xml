@@ -5,7 +5,7 @@
 
         <variable
             name="usrVM"
-            type="com.SunStarJ.testbinding.UserViewModel" />
+            type="com.sunstar_j.testbinding.UserViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -1,13 +1,13 @@
-package com.SunStarJ.testbinding
+package com.sunstar_j.testbinding
 
 
 import android.view.View.OnClickListener
 import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import com.SunStarJ.strict_databinding.DataBindingConfig
-import com.SunStarJ.strict_databinding.SBindActivity
-import com.SunStarJ.strict_databinding.XMLBindingData
+import com.sunstar_j.strict_databinding.DataBindingConfig
+import com.sunstar_j.strict_databinding.SBindActivity
+import com.sunstar_j.strict_databinding.XMLBindingData
 import com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener
 
 class MainActivity : SBindActivity() {

@@ -60,7 +60,7 @@ data class XMLBindingData(val id: Int, val value: Any)
 ```
 
 ### Activity使用
-仅展示核心代码，代码细节可以直接查看原始[MainActivity](/app/src/main/java/com/SunStarJ/testbinding/MainActivity.kt)
+仅展示核心代码，代码细节可以直接查看原始[MainActivity](/app/src/main/java/com/sunstar_j/testbinding/MainActivity.kt)
 
 ``` kotlin
 

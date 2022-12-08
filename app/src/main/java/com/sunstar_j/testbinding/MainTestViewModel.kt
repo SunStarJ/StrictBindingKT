@@ -1,8 +1,7 @@
-package com.SunStarJ.testbinding
+package com.sunstar_j.testbinding
 
 import android.util.Log
 import androidx.databinding.ObservableArrayList
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MainTestViewModel : ViewModel() {

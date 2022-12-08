@@ -10,7 +10,7 @@ task generateSourcesJar(type: Jar) {
 }
 
 android {
-    namespace 'com.SunStarJ.strict_databinding'
+    namespace 'com.sunstar_j.strict_databinding'
     compileSdk 33
 
     defaultConfig {

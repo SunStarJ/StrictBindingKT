@@ -1,10 +1,10 @@
-package com.SunStarJ.testbinding
+package com.sunstar_j.testbinding
 
 import android.content.Context
 import android.util.Log
 import android.view.View
-import com.SunStarJ.strict_databinding.SBindAdapter
-import com.SunStarJ.strict_databinding.XMLBindingData
+import com.sunstar_j.strict_databinding.SBindAdapter
+import com.sunstar_j.strict_databinding.XMLBindingData
 
 class TestAdapter(context: Context) : SBindAdapter<TestData>(context) {
     override fun setItemConfig(positionData: TestData): List<XMLBindingData> = mutableListOf(

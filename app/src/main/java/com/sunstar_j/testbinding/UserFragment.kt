@@ -1,8 +1,8 @@
-package com.SunStarJ.testbinding
+package com.sunstar_j.testbinding
 
-import com.SunStarJ.strict_databinding.DataBindingConfig
-import com.SunStarJ.strict_databinding.SBindFragment
-import com.SunStarJ.strict_databinding.XMLBindingData
+import com.sunstar_j.strict_databinding.DataBindingConfig
+import com.sunstar_j.strict_databinding.SBindFragment
+import com.sunstar_j.strict_databinding.XMLBindingData
 
 class UserFragment private constructor() : SBindFragment() {
     private val userViewModel by lazy { //生成viewmodel

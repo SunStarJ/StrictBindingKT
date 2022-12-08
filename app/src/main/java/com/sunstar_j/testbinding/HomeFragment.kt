@@ -1,8 +1,7 @@
-package com.SunStarJ.testbinding
+package com.sunstar_j.testbinding
 
-import com.SunStarJ.strict_databinding.DataBindingConfig
-import com.SunStarJ.strict_databinding.SBindFragment
-import com.github.testbinding.R
+import com.sunstar_j.strict_databinding.DataBindingConfig
+import com.sunstar_j.strict_databinding.SBindFragment
 
 class HomeFragment private constructor() : SBindFragment() {
     override fun initDataBindingConfig(): DataBindingConfig =

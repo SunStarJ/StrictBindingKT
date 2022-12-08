@@ -1,4 +1,4 @@
-package com.SunStarJ.strict_databinding
+package com.sunstar_j.strict_databinding
 
 import androidx.databinding.BindingAdapter
 import androidx.databinding.ObservableArrayList

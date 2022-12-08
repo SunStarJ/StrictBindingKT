@@ -1,4 +1,4 @@
-package com.SunStarJ.testbinding
+package com.sunstar_j.testbinding
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

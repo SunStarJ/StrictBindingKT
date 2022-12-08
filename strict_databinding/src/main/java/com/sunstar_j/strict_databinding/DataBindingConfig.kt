@@ -1,4 +1,4 @@
-package com.SunStarJ.strict_databinding
+package com.sunstar_j.strict_databinding
 
 class DataBindingConfig(val layoutId: Int, vararg xmlBindingData: XMLBindingData){
     var xmlBindingDataArray = xmlBindingData
