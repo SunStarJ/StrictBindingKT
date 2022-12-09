@@ -24,6 +24,7 @@
         <variable
             name="navigationChange"
             type="com.google.android.material.navigation.NavigationBarView.OnItemSelectedListener" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -51,6 +52,8 @@
         <FrameLayout
             app:layout_constraintTop_toBottomOf="@+id/rc_view"
             android:id="@+id/fcv"
+            showFragment="@{mainVm.showFragment}"
+            oldFragment="@{mainVm.hideFragment}"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_width="match_parent"
             app:layout_constraintBottom_toBottomOf="@+id/bottom_view"

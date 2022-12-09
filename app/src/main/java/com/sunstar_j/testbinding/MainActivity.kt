@@ -18,11 +18,6 @@ class MainActivity : SBindActivity() {
         applicationVM<UserViewModel>()
     }
 
-    private var lastIndex = -1
-
-    private val fragmentList =
-        listOf<Fragment>(HomeFragment.newInstance(), UserFragment.newInstance())
-
     private val dataBindingConfig by lazy {
         DataBindingConfig(
             R.layout.activity_main,
@@ -37,7 +32,7 @@ class MainActivity : SBindActivity() {
                         R.id.main_my -> 1
                         else -> -1
                     }
-                    changeFragment(index)
+                    mainVM.changeFragment(index)
                     index != -1
                 }),
             XMLBindingData(
@@ -47,25 +42,6 @@ class MainActivity : SBindActivity() {
     }
 
     override fun initBindingConfig(): DataBindingConfig {
-        changeFragment(0)
         return dataBindingConfig
     }
-
-
-    fun changeFragment(index: Int) {
-        if (lastIndex == index) return
-        val showFragment = fragmentList[index]
-        val hidFragment = if (lastIndex == -1) null else fragmentList[lastIndex]
-        supportFragmentManager.commit {
-            hidFragment?.run {
-                hide(this)
-            }
-            if (!showFragment.isAdded) {
-                add(R.id.fcv, showFragment)
-            }
-            show(showFragment)
-        }
-        lastIndex = index
-    }
-
 }
